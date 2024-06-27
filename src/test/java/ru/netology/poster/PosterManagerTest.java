@@ -63,7 +63,7 @@ class PosterManagerTest {
     }
 
     @Test
-    public void findLast(){
+    public void findLast() {
         PosterManager last = new PosterManager();
 
         last.addMovie(poster3);
@@ -80,7 +80,7 @@ class PosterManagerTest {
     }
 
     @Test
-    public void findLastSecound(){
+    public void findLastSecound() {
         PosterManager last = new PosterManager(7);
         last.addMovie(poster1);
         last.addMovie(poster2);
@@ -97,7 +97,7 @@ class PosterManagerTest {
     }
 
     @Test
-    public void findLastThree(){
+    public void findLastThree() {
         PosterManager last = new PosterManager(8);
 
         last.addMovie(poster1);

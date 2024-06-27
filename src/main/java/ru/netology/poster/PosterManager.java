@@ -1,4 +1,5 @@
 package ru.netology.poster;
+
 public class PosterManager {
 
     private Poster[] posters = new Poster[0];
@@ -14,12 +15,13 @@ public class PosterManager {
 
     public void addMovie(Poster poster) {
         Poster[] tmp = new Poster[posters.length + 1];
-        for (int i =0; i < posters.length; i++) {
+        for (int i = 0; i < posters.length; i++) {
             tmp[i] = posters[i];
         }
         tmp[tmp.length - 1] = poster;
         posters = tmp;
     }
+
     public Poster[] findAll() {
         return posters;
     }
@@ -37,6 +39,7 @@ public class PosterManager {
         }
         return result;
     }
+
     public Poster[] getPosters() {
         return posters;
     }
